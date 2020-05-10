@@ -38,10 +38,11 @@ label {
   width: 35px;
   height: 2px;
   background-color: #fff;
-  transition: .5s all;
+  transition: 0.5s all;
 }
 
-.second, .third {
+.second, 
+.third {
   top: 18px;
 }
 
@@ -73,27 +74,27 @@ a {
 }
 
 a:hover {
-  background-color: rgba(0,0,0,.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-#check-menu:checked ~ .main-menu{
+#check-menu:checked ~ .main-menu {
   max-height: 500px;
   font-size: 16px;
 }
 
-#check-menu:checked ~ .first{
+#check-menu:checked ~ .first {
   display: none;
 }
 
-#check-menu:checked ~ .second{
+#check-menu:checked ~ .second {
   transform: rotate(45deg);
 }
 
-#check-menu:checked ~ .third{
+#check-menu:checked ~ .third {
   transform: rotate(-45deg);
 }
 
-#check-menu:checked ~ .fourth{
+#check-menu:checked ~ .fourth {
   display: none;
 }
 
@@ -102,46 +103,46 @@ a:hover {
 }
 
 @media all and (max-width: 800px) {
-.main-menu { justify-content: space-around; }
-.main-menu a { flex-grow:1; }
+  .main-menu { justify-content: space-around; }
+  .main-menu a { flex-grow: 1; }
 }
 
 @media all and (max-width: 500px) {
-.main-menu { flex-direction: column; }
+  .main-menu { flex-direction: column; }
 }
 
 @media (min-width: 320px) {
-.title {
-  font-size: 15px;
-	}
+  .title {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 481px) {
-.title {
-  font-size: 25px;
-	}
+  .title {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 641px) {
-.title {
-  font-size: 35px;
-	}
+  .title {
+    font-size: 35px;
+  }
 }
 
 @media (min-width: 961px) {
-.title {
-  font-size: 45px;
-	}
+  .title {
+    font-size: 45px;
+  }
 }
 
 @media (min-width: 1025px) {
 .title {
-  font-size: 55px;
-	}
+    font-size: 55px;
+  }
 }
 
 @media (min-width: 1281px) {
 .title {
-  font-size: 65px;
-    }
+    font-size: 65px;
+  }
 }
