@@ -1,79 +1,77 @@
 
 .title {
-	font-size: 10px;
+		font-size: 10px;
 }
 
-body{ 
-	font-family:arial; 
+body {
+		font-family: arial, sans-serif;
 }
 
 .nav {
-	display: flex;
-	justify-content: flex-end; /* разместим справа */
-	background: #008aff;
+		display: flex;
+		justify-content: flex-end;
+		background: #008aff;
 }
 
 .nav a {
-	color:#fff;
-	padding:15px 10px;
-	text-decoration:none;
-	text-align:center;
+		color: #fff;
+		padding: 15px 10px;
+		text-decoration: none;
+		text-align: center;
 }
 
-.nav a:hover { 
-	background:#5c8db7; 
+.nav a:hover {
+		background: #5c8db7;
 }
 
-/* меньше 800px */
 @media all and (max-width: 800px) {
-.nav { 
-	justify-content: space-around; 
+.nav {
+		justify-content: space-around;
 }
-.nav a { 
-flex-grow:1; 
-/* растягиваться на всю ширину */ 
+
+.nav a {
+		flex-grow: 1;
 	}
 }
 
-/* меньше 500px */
 @media all and (max-width: 500px) {
-.nav { 
-	flex-direction: column; 
+.nav {
+		flex-direction: column;
 	}
 }
 
 @media (min-width:320px) {
 .title {
-	font-size: 15px;
+		font-size: 15px;
 	}
 }
 
-@media (min-width:481px) {
+@media (min-width: 481px) {
 .title {
-	font-size: 25px;
+		font-size: 25px;
 	}
 }
 
-@media (min-width:641px) {
-	.title {
-	font-size: 35px;
-	}
-}
-
-@media (min-width:961px) {
+@media (min-width: 641px) {
 .title {
-	font-size: 45px;
+		font-size: 35px;
 	}
 }
 
-@media (min-width:1025px) {
+@media (min-width: 961px) {
 .title {
-	font-size: 55px;
+		font-size: 45px;
 	}
 }
 
-@media (min-width:1281px) {
+@media (min-width: 1025px) {
 .title {
-	font-size: 65px;
+		font-size: 55px;
+	}
+}
+
+@media (min-width: 1281px) {
+.title {
+		font-size: 65px;
 	}
 }
