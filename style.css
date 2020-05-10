@@ -41,11 +41,7 @@ label {
   transition: 0.5s all;
 }
 
-.second
- ,
-.third {
-  top: 18px;
-}
+.second ,.third { top: 18px; }
 
 .fourth {
   top: 28px;
