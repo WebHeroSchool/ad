@@ -1,0 +1,153 @@
+#menu-checkbox {
+  /* чекбокс скрыт */
+  display: none;
+}
+
+.main-menu {
+  /* пункты меню скрыты */
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu li {
+  /* пункты меню расположены вертикально */
+  /* каждый имеет ширину 100% */
+  font-size: 1em;
+  display: block;
+  width: 100%;
+}
+
+.main-menu a {
+  /* немного стилизуем ссылки */
+  display: block;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: #333;
+  font-size: 25px;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+}
+
+.toggle-button {
+  text-align: center;
+  display: block;
+  /* не забываем явно указать каким должен быть курсор */
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.toggle-button:after {
+  /* получаем данные из атрибута data-open в html */
+  content: attr(data-open);
+  display: block;
+  margin: 10px 0;
+  padding: 10px 30px;
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+  /* когда чекбокс активен меню становится видимым */
+  display: block;
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+  content: attr(data-close);
+}
+
+@media screen and (min-width: 640px) {
+    .toggle-button {
+      /* label скрыт */
+      display: none;
+    }
+
+    .main-menu {
+      display: block;
+      margin: 0 auto;
+      background-color: #333;
+      height: 30px;
+    }
+
+    .main-menu li {
+      /* теги <li> расположены в ряд */
+      width: calc(100% / 5);
+      text-align: center;
+      display: inline-block;
+      margin-right: -4px;
+    }
+
+    .main-menu a {
+      display: inline-block;
+      margin-right: -4px;
+      font-size: 14px;
+      background-color: #333;
+      text-decoration: none;
+      color: #fff;
+      text-transform: capitalize;
+      border-bottom: 0;
+    }
+  }
+
+.toggle-button:after {
+    content: "\f0c9";
+    font-family: 'FontAwesome';
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .menu {
+    display: block;
+}
+
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+    content: "\f0c9";
+    font-family: 'FontAwesome';
+    color: white;
+}
+
+.title {
+  font-size: 10px;
+}
+
+@media (min-width: 320px) {
+  .title {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 481px) {
+  .title {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 641px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 961px) {
+  .title {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .title {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .title {
+    font-size: 65px;
+  }
+}
